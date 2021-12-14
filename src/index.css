@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fixed-top{
+  background-color: #FFF;
+}
+
+a.nav-link{
+  color: #172B4D;
+  font-size: 20px;
+}
+
+a.nav-link.active{
+  background-color: #349C90 !important;
+  border-radius: 0%;
+}
+
+img.productImage.rounded {
+  max-height: 120px;
+  max-width: 120px;
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+h1#mainHeader{
+  margin-top: 100px !important;
+}
+
+#ScanIcon{
+  font-size: 100px;
+}
