@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/579_Final_Meme_Budget/static/css/main.9bb6ff0c.chunk.css",
-    "main.js": "/579_Final_Meme_Budget/static/js/main.03aa86ad.chunk.js",
-    "main.js.map": "/579_Final_Meme_Budget/static/js/main.03aa86ad.chunk.js.map",
+    "main.js": "/579_Final_Meme_Budget/static/js/main.b04200be.chunk.js",
+    "main.js.map": "/579_Final_Meme_Budget/static/js/main.b04200be.chunk.js.map",
     "runtime-main.js": "/579_Final_Meme_Budget/static/js/runtime-main.e1983314.js",
     "runtime-main.js.map": "/579_Final_Meme_Budget/static/js/runtime-main.e1983314.js.map",
     "static/css/2.0a9ec390.chunk.css": "/579_Final_Meme_Budget/static/css/2.0a9ec390.chunk.css",
@@ -14,6 +14,7 @@
     "static/css/2.0a9ec390.chunk.css.map": "/579_Final_Meme_Budget/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.9bb6ff0c.chunk.css.map": "/579_Final_Meme_Budget/static/css/main.9bb6ff0c.chunk.css.map",
     "static/js/2.72e704fc.chunk.js.LICENSE.txt": "/579_Final_Meme_Budget/static/js/2.72e704fc.chunk.js.LICENSE.txt",
+    "static/media/gold-unsplash.7f63e5e9.jpg": "/579_Final_Meme_Budget/static/media/gold-unsplash.7f63e5e9.jpg",
     "static/media/strawberry_unsplash.5927060e.jpg": "/579_Final_Meme_Budget/static/media/strawberry_unsplash.5927060e.jpg"
   },
   "entrypoints": [
@@ -21,6 +22,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.72e704fc.chunk.js",
     "static/css/main.9bb6ff0c.chunk.css",
-    "static/js/main.03aa86ad.chunk.js"
+    "static/js/main.b04200be.chunk.js"
   ]
 }
