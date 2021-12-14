@@ -100,10 +100,10 @@ function Home(props) {
         {text: 'Save', amount: price-budget, style:{fill:"#349C90"}}
     ];
 
-    const width = 400; // sets the basic size of the resulting svg graph
-    const height = 300;
+    const width = 300; // sets the basic size of the resulting svg graph
+    const height = 250;
 
-    const margin = {top: 20, right: 20, bottom: 20, left:100};
+    const margin = {top: 20, right: 20, bottom: 20, left:65};
 
     const innerHeight = height - margin.top - margin.bottom; // using innerHeight and innerWidth applies the margin to the x and y scales
     const innerWidth = width - margin.left - margin.right;
@@ -304,6 +304,7 @@ function Home(props) {
                 <div className='col-12'>
                     <h2 id="Summary">Order Summary</h2>
                 </div>
+                <div className='col-12 text-center'>
                     <svg width={width} height={height}>
                         <g transform={`translate(${margin.left}, ${margin.top})`}>  {/* adding the group tag and transforming moves applies the margin on all sides now*/}
 
@@ -328,6 +329,7 @@ function Home(props) {
                         ))}
                         </g>
                     </svg>
+                    </div>
                 </div>
                 </div>
             </div>
