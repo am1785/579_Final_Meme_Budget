@@ -15,7 +15,6 @@ import Image from 'react-bootstrap/Image';
 import { BsFillTrashFill } from 'react-icons/bs';
 import strawberry_unsplash from './imgs/strawberry_unsplash.jpg';
 import { scaleBand, scaleLinear, max } from 'd3';
-import Gold from './imgs/gold-unsplash.jpg';
 
 function Home(props) {
     /* 进度条Meme Budget */
@@ -95,11 +94,22 @@ function Home(props) {
     }
 
     // Order Summary Part
-    const chart_data = [
+    const data = [
         {text: 'Order', amount: budget, style:{fill:"#F45050"}},
         {text: 'Budget', amount: price, style:{fill:"#BEBEC7"}},
-        {text: 'Save', amount: price-budget, style:{fill:"#349C90"}}
+        {text: 'Save', amount: Number(price)-Number(budget), style:{fill:"#349C90"}}
     ];
+
+    const [chart_data, setChartData] = useState(data);
+
+    useEffect(() =>{
+        const new_data = [
+            {text: 'Order', amount: budget, style:{fill:"#F45050"}},
+            {text: 'Budget', amount: price, style:{fill:"#BEBEC7"}},
+            {text: 'Save', amount: Number(price)-Number(budget), style:{fill:"#349C90"}}
+        ]
+        setChartData(new_data);
+    },[budget, price]);
 
     const width = 300; // sets the basic size of the resulting svg graph
     const height = 250;
@@ -234,15 +244,17 @@ function Home(props) {
                                         if (ele.quantity > 1) {
                                             let list = cartlist;
                                             list[i].quantity = list[i].quantity * 1 - 1;
-                                            setcartlist([...list])
-                                            savecard()
+                                            setcartlist([...list]);
+                                            savecard();
+                                            setprice(bar);
                                         }
                                     }} variant="outline-primary">-</Button> {ele.quantity}
                                     <Button variant="outline-primary" onClick={() => {
                                         let list = cartlist;
                                         list[i].quantity = list[i].quantity * 1 + 1;
-                                        setcartlist([...list])
-                                        savecard()
+                                        setcartlist([...list]);
+                                        savecard();
+                                        setprice(bar);
                                     }}>+</Button>
                                 </div>
                                 <div className='col-2'>
