@@ -1,3 +1,5 @@
+import Gold from './imgs/gold-unsplash.jpg';
+
 const itemList = [
     {
         'serial': "123456",
@@ -108,6 +110,14 @@ const itemList = [
         "serving": "1.0lb",
         "price": "2.25",
         "quantity": "1",
-    }
+    },
+    {
+        'serial': "654321",
+        'image': Gold,
+        "name": "Gold",
+        "serving": "1g",
+        "price": "30",
+        "quantity": "1",
+    },
 ]
 export default itemList;

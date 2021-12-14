@@ -15,6 +15,7 @@ import Image from 'react-bootstrap/Image';
 import { BsFillTrashFill } from 'react-icons/bs';
 import strawberry_unsplash from './imgs/strawberry_unsplash.jpg';
 import { scaleBand, scaleLinear, max } from 'd3';
+import Gold from './imgs/gold-unsplash.jpg';
 
 function Home(props) {
     /* 进度条Meme Budget */
