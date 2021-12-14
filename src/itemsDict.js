@@ -1,32 +1,30 @@
 import Gold from './imgs/gold-unsplash.jpg';
+import strawberry_unsplash from './imgs/strawberry_unsplash.jpg';
+import potato from './imgs/potato.jpg';
+import apple from './imgs/apple.jpg';
+import orange from './imgs/orange.jfif';
+import watermelon from './imgs/watermelon.jfif';
+import rabbitfood from './imgs/rabbit food.jfif';
+import rice from './imgs/rice.jpg';
+import icecream from './imgs/ice cream.jpg';
+import hairconditioner from './imgs/hair conditioner.jfif';
+import bleach from './imgs/bleach.jpeg';
+import pineapple from './imgs/pineapple.jpg';
+import brussel from './imgs/brussel_unsplash.jpg';
+
 
 const itemList = [
     {
         'serial': "123456",
-        'image': "https://picsum.photos/200",
+        'image': strawberry_unsplash,
         "name": "Organic Strawberries",
         "serving": "1.5lb",
         "price": "2.25",
         "quantity": "1",
     },
     {
-        'serial': "234567",
-        'image': "https://picsum.photos/200",
-        "name": "Rural Strawberries",
-        "serving": "1.5lb",
-        "price": "2.25",
-        "quantity": "1",
-    }, {
-        'serial': "232323",
-        'image': "https://picsum.photos/200",
-        "name": "Natural Strawberries",
-        "serving": "1.5lb",
-        "price": "2.25",
-        "quantity": "1",
-    },
-    {
         'serial': "333333",
-        'image': "https://picsum.photos/200",
+        'image': potato,
         "name": "Organic Potato",
         "serving": "1.0lb",
         "price": "1.75",
@@ -34,15 +32,15 @@ const itemList = [
     },
     {
         'serial': "444444",
-        'image': "https://picsum.photos/200",
+        'image': pineapple,
         "name": "Hawaii Pineapples",
         "serving": "1.0lb",
-        "price": "2.25",
+        "price": "2.50",
         "quantity": "1",
     },
     {
         'serial': "555555",
-        'image': "https://picsum.photos/200",
+        'image': apple,
         "name": "Fuji Apples",
         "serving": "1.0lb",
         "price": "2.25",
@@ -50,39 +48,39 @@ const itemList = [
     },
     {
         'serial': "666666",
-        'image': "https://picsum.photos/200",
+        'image': rice,
         "name": "Premium Rice",
-        "serving": "1.0lb",
-        "price": "1.75",
+        "serving": "2.0lb",
+        "price": "1.50",
         "quantity": "1",
     },
     {
         'serial': "777777",
-        'image': "https://picsum.photos/200",
+        'image': icecream,
         "name": "Vanilla Icecream",
         "serving": "1.0lb",
-        "price": "2.25",
+        "price": "4.50",
         "quantity": "1",
     },
     {
         'serial': "999999",
-        'image': "https://picsum.photos/200",
+        'image': rabbitfood,
         "name": "Organic Pet Rabbit Food",
         "serving": "4.5lb",
         "price": "11.29",
         "quantity": "1",
     },
     {
-        'serial': "435628",
-        'image': "https://picsum.photos/200",
+        'serial': "000001",
+        'image': bleach,
         "name": "Toilet Bleach",
-        "serving": "1.0lb",
-        "price": "2.25",
+        "serving": "2 Pack",
+        "price": "7.00",
         "quantity": "1",
     },
     {
-        'serial': "123642",
-        'image': "https://picsum.photos/200",
+        'serial': "222222",
+        'image': orange,
         "name": "Mandarin Orange",
         "serving": "1.0lb",
         "price": "2.25",
@@ -90,25 +88,25 @@ const itemList = [
     },
     {
         'serial': "888888",
-        'image': "https://picsum.photos/200",
+        'image': hairconditioner,
         "name": "Hair Conditioner",
         "serving": "1.0lb",
-        "price": "2.25",
+        "price": "5.50",
         "quantity": "1",
     }, {
-        'serial': "154732",
-        'image': "https://picsum.photos/200",
+        'serial': "000002",
+        'image': watermelon,
         "name": "Watermelon",
-        "serving": "1.0lb",
-        "price": "2.25",
+        "serving": "2.0lb",
+        "price": "5.5",
         "quantity": "1",
     },
     {
-        'serial': "686868",
-        'image': "https://picsum.photos/200",
-        "name": "Farm Squash",
+        'serial': "111111",
+        'image': brussel,
+        "name": "Brussel Sprouts",
         "serving": "1.0lb",
-        "price": "2.25",
+        "price": "1.75",
         "quantity": "1",
     },
     {

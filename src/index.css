@@ -42,3 +42,11 @@ h1#mainHeader{
 #ScanIcon{
   font-size: 100px;
 }
+
+.MemeImage{
+  max-height: 360px;
+}
+
+#Summary{
+  margin-top: 60px;
+}

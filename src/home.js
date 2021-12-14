@@ -13,8 +13,13 @@ import Webcam from "react-webcam";
 import React from "react";
 import Image from 'react-bootstrap/Image';
 import { BsFillTrashFill } from 'react-icons/bs';
-import strawberry_unsplash from './imgs/strawberry_unsplash.jpg';
 import { scaleBand, scaleLinear, max } from 'd3';
+import strawberry_unsplash from './imgs/strawberry_unsplash.jpg';
+import zero from './imgs/0_20.gif';
+import twenty from './imgs/25_50.gif';
+import fifty from './imgs/50_75.gif';
+import seventy from './imgs/75_100.gif';
+import hundred from './imgs/100_.gif';
 
 function Home(props) {
     /* 进度条Meme Budget */
@@ -38,29 +43,6 @@ function Home(props) {
     /* cartlist,如果购物车本地存储为空，则导入默认数组，否则从本地读取 */
     let [cartlist, setcartlist] = useState(localStorage.getItem('cardlist') == null ?
         [
-            {
-                'serial': "123456",/* 编号 */
-                'image': strawberry_unsplash,/* 图片远程链接 */
-                "name": "Organic Strawberries",/* 名称 */
-                "serving": "1.5lb",
-                "price": "2.25",/* 单价 */
-                "quantity": "1",/* 数量 */
-            },
-            {
-                'serial': "234567",
-                'image': strawberry_unsplash,
-                "name": "Rural Strawberries",
-                "serving": "1.5lb",
-                "price": "2.25",
-                "quantity": "1",/* 数量 */
-            }, {
-                'serial': "232323",
-                'image': strawberry_unsplash,
-                "name": "Natural Strawberries",
-                "serving": "1.5lb",
-                "price": "2.25",
-                "quantity": "1",/* 数量 */
-            },
         ] : JSON.parse(localStorage.getItem('cardlist'))
     );
     /* iframe data */
@@ -150,19 +132,23 @@ function Home(props) {
                 <h2 id="Meme">Meme</h2>
                 {progress() * 100 > 0 && progress() * 100 <= 25 ?
                     (
-                        <iframe src="https://giphy.com/embed/2hg8EfuuCAq5Lucb8i" width="280" height="280" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                        <Image className='MemeImage text-center' src={zero} rounded></Image>
                     ) : ""}
                 {progress() * 100 > 25 && progress() * 100 <= 50 ?
                     (
-                        <iframe src="https://giphy.com/gifs/money-jetsons-cartoon-ESt8At0PXpmj6" width="280" height="280" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                        <Image className='MemeImage text-center' src={twenty} rounded></Image>
                     ) : ""}
                 {progress() * 100 > 50 && progress() * 100 <= 75 ?
                     (
-                        <iframe src="https://giphy.com/gifs/empire-muslim-ottoman-Km2YiI2mzRKgw" width="280" height="280" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                        <Image className='MemeImage text-center' src={fifty} rounded></Image>
                     ) : ""}
                 {progress() * 100 > 75 && progress() * 100 <= 100 ?
                     (
-                        <iframe src="https://giphy.com/gifs/mrw-share-dividends-lhaqiQtq9AipW" width="280" height="280" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                        <Image className='MemeImage text-center' src={seventy} rounded></Image>
+                    ) : ""}
+                {progress() * 100 > 100 && progress() * 100 > 100 ?
+                    (
+                        <Image className='MemeImage text-center' src={hundred} rounded></Image>
                     ) : ""}
             </div>
         </div>
